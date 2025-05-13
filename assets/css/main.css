@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #fff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -321,6 +321,28 @@ input, select, textarea {
 	hr {
 		border-bottom-color: #eeeeee;
 	}
+
+	/* Experience bzw. CV */
+	.experience-container {
+		display: flex; 
+		align-items: flex-start; 
+		gap: 30px;
+		
+	}
+
+	.ichhassewortabstände {
+		margin-top: 4rem !important;
+		text-align: left;
+	}
+
+	@media screen and (max-width: 850px) {
+	
+		.experience-container {
+			flex-direction: column;
+		}
+
+	}
+
 
 /* Row */
 
@@ -1301,6 +1323,8 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			
 
 			.row {
 				display: flex;
