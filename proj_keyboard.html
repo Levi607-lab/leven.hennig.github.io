@@ -36,105 +36,123 @@
 			align-items: center;
 			justify-content: center;
 			opacity: 1;
+			z-index: 1000;
 		}
 
 		.back-button:hover {
 			background-color: #c9caca;
 		}
+		/* Bild besser einpassen */
+		.keyboard-image {
+			max-width: 350px;
+			width: 100%;
+			height: auto;
+			margin: 0 2rem 1rem 0;
+			/* border-radius entfernt */
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+			float: left;
+		}
+		@media (max-width: 800px) {
+			.keyboard-image {
+				float: none;
+				display: block;
+				margin: 0 auto 1rem auto;
+			}
+		}
 	</style>
 </head>
 
+<body>
 <!-- Wrapper -->
 <div id="wrapper">
-	<button class="back-button" onclick="history.back()">← Back</button>
+    <button class="back-button" onclick="history.back()">← Back</button>
 
-	<!-- Header -->
-	<header id="header">
-		<a href="index.html" class="logo">Leven Hennig</a>
-	</header>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Leven Hennig</a>
+    </header>
 
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="links">
-			<li><a href="index.html">About me</a></li>
-			<li class="active"><a href="Projects.html">Projects</a></li>
-			<li><a href="CV.html">CV</a></li>
-			<li><a href="Posts.html">Posts</a></li>
-		</ul>
-		<ul class="icons">
-			<li><a href="https://www.linkedin.com/in/leven-hennig-6a9410341/" class="icon brands fa-linkedin"><span
-						class="label">My LinkedIn</span></a></li>
-			<li><a href="https://www.instagram.com/levi_i_i/" class="icon brands fa-instagram"><span class="label">My
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">About me</a></li>
+            <li class="active"><a href="Projects.html">Projects</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="Posts.html">Posts</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/leven-hennig-6a9410341/" class="icon brands fa-linkedin"><span
+                        class="label">My LinkedIn</span></a></li>
+            <li><a href="https://www.instagram.com/levi_i_i/" class="icon brands fa-instagram"><span class="label">My
 						Instagram</span></a></li>
-			<li><a href="https://github.com/Levi607-lab" class="icon brands fa-github"><span class="label">My
+            <li><a href="https://github.com/Levi607-lab" class="icon brands fa-github"><span class="label">My
 						GitHub</span></a></li>
-		</ul>
-	</nav>
-	<!-- Main -->
-	<div id="main">
+        </ul>
+    </nav>
+    <!-- Main -->
+    <div id="main">
 
-		<!-- Post -->
-		<section class="post">
-			<header class="major">
-				<span class="date">Datum</span>
-				<h1>Woodcap Keyboard</h1>
-				<p>A simple 3d-printed keyboard with woodcaps I designed<br />
-				</p>
-			</header>
-			<div class="image left"><img src="images/keyboard_image.jpg"
-					alt="The final result" style="width: 300px; height: auto;" />
-			</div>
-			<p>
-			</p>
-			<p></p>
-		</section>
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <span class="date">Datum</span>
+                <h1>Woodcap Keyboard</h1>
+                <p>A simple 3d-printed keyboard with woodcaps I designed<br />
+                </p>
+            </header>
+            <img src="images/keyboard_image.jpg" alt="The final result" class="keyboard-image" />
+            <p>
+                <!-- Hier kannst du deinen Text ergänzen -->
+                This is a custom keyboard project with 3D-printed case and wooden keycaps. The design focuses on simplicity and unique tactile feel.
+            </p>
+        </section>
 
-	</div>
-
-
-	<!-- Footer -->
-	<footer id="footer" style="display: flex; justify-content: center; padding: 2rem 1rem;">
-		<div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap; text-align: center;">
-
-			<!-- Email Section -->
-			<section style="display: flex; align-items: center;">
-				<h3 style="margin: 0 10px 0 0;">Email:</h3>
-				<a href="mailto:leven.hennig@hsu-hh.de">leven.hennig@hsu-hh.de</a>
-			</section>
-
-			<!-- Social Section -->
-			<section style="display: flex; align-items: center;">
-				<h3 style="margin: 0 10px 0 0;">Social:</h3>
-				<ul class="icons" style="display: flex; gap: 10px; margin: 0; padding: 0; list-style: none;">
-					<li>
-						<a href="https://www.linkedin.com/in/leven-hennig-6a9410341/" class="icon brands fa-linkedin">
-							<span class="label">LinkedIn</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/levi_i_i/" class="icon brands fa-instagram">
-							<span class="label">Instagram</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/Levi607-lab" class="icon brands fa-github">
-							<span class="label">GitHub</span>
-						</a>
-					</li>
-				</ul>
-			</section>
-
-		</div>
-	</footer>
+    </div>
 
 
-	<!-- Copyright -->
-	<div id="copyright">
-		<ul>
-			<li>&copy; </li>
-			<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-		</ul>
-	</div>
+    <!-- Footer -->
+    <footer id="footer" style="display: flex; justify-content: center; padding: 2rem 1rem;">
+        <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap; text-align: center;">
+
+            <!-- Email Section -->
+            <section style="display: flex; align-items: center;">
+                <h3 style="margin: 0 10px 0 0;">Email:</h3>
+                <a href="mailto:leven.hennig@hsu-hh.de">leven.hennig@hsu-hh.de</a>
+            </section>
+
+            <!-- Social Section -->
+            <section style="display: flex; align-items: center;">
+                <h3 style="margin: 0 10px 0 0;">Social:</h3>
+                <ul class="icons" style="display: flex; gap: 10px; margin: 0; padding: 0; list-style: none;">
+                    <li>
+                        <a href="https://www.linkedin.com/in/leven-hennig-6a9410341/" class="icon brands fa-linkedin">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/levi_i_i/" class="icon brands fa-instagram">
+                            <span class="label">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Levi607-lab" class="icon brands fa-github">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </footer>
+
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul>
+            <li>&copy; </li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
 
 </div>
 

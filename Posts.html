@@ -7,14 +7,83 @@
 <html>
 
 <head>
-	<title>Leven Hennig</title>
-	<link rel="icon" href="images/icon.png" type="image/png">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <title>Leven Hennig</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        .posts-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2em;
+            /* Weniger Abstand zwischen Einträgen */
+            margin-top: 2em;
+        }
+
+        .post-entry {
+            display: flex;
+            align-items: stretch;
+            gap: 1.2em;
+            /* Weniger Abstand zwischen Bild und Text */
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .post-entry img {
+            width: 220px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            margin-top: 0;
+            flex-shrink: 0;
+            align-self: stretch;
+            display: block;
+        }
+
+        .post-entry-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .post-entry .date {
+            color: #888;
+            font-size: 0.95em;
+            display: block;
+            margin-bottom: 0.2em;
+        }
+
+        .post-entry h3 {
+            margin: 0 0 0.3em 0;
+            font-size: 1.2em;
+        }
+
+        .posts-list hr {
+            margin: 0.7em 0;
+            /* Weniger Abstand über und unter der Linie */
+        }
+
+        @media (max-width: 600px) {
+            .post-entry {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .post-entry img {
+                margin-bottom: 0.7em;
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                align-self: auto;
+            }
+        }
+    </style>
 </head>
 
 <!-- Wrapper -->
@@ -50,13 +119,281 @@
 			<header class="major">
 				<h1>Posts</h1>
 			</header>
+			<hr>
 
-	<hr />
-	<h5>19.04.2025</h5>
-	<h3><a href="post_1.html">My first post</a></h3>
-	<p>This is my first post and a  test if this structure works. Read more by klicking the headline.</p>
-	<hr />
-	</div>
+			<div class="posts-list">
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Makerchallenge Teaser" />
+        <div class="post-entry-content">
+            <span class="date">17.06.2022</span>
+            <h3><a href="post_makerchallenge.html">My Participation in the Maker Challenge 2022</a></h3>
+            <p>The story of how I won the Best Student Project award.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Greenhouse Teaser" />
+        <div class="post-entry-content">
+            <span class="date">30.05.2022</span>
+            <h3><a href="post_gewaechshaus.html">School Greenhouse</a></h3>
+            <p>My Maker Challenge project: An automated smart greenhouse for children to develop.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Best Student Project Teaser" />
+        <div class="post-entry-content">
+            <span class="date">04.03.2023</span>
+            <h3><a href="post_bestes_schuelerprojekt.html">Awarded! My Journey to the Best Student Project</a></h3>
+            <p>Award and experiences during the ceremony at the Future of Making conference.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Tiles Teaser" />
+        <div class="post-entry-content">
+            <span class="date">22.05.2023</span>
+            <h3><a href="post_rocko_schamonie.html">Creative Tiles: Designing with Rocko Schamonie</a></h3>
+            <p>A creative tile project with Rocko Schamonie.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Bionic Hand Teaser" />
+        <div class="post-entry-content">
+            <span class="date">05.05.2023</span>
+            <h3><a href="post_bionische_hand.html">Bionic Hand: Technology that Moves</a></h3>
+            <p>Development and construction of a bionic hand.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Keyboard Teaser" />
+        <div class="post-entry-content">
+            <span class="date">18.05.2023</span>
+            <h3><a href="post_tastatur.html">Custom Keys: The Journey to My Own Keyboard</a></h3>
+            <p>Design and construction of a custom keyboard.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Talking Flowerpot Teaser" />
+        <div class="post-entry-content">
+            <span class="date">01.06.2023</span>
+            <h3><a href="post_meckernder_blumentopf.html">The Complaining Flowerpot: Plants with Personality</a></h3>
+            <p>A flowerpot that lets you know when it needs water by bullying you.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Arcade Machine Teaser" />
+        <div class="post-entry-content">
+            <span class="date">14.06.2023</span>
+            <h3><a href="post_arcade_maschine.html">Retro Gaming: The Self-Built Arcade Machine</a></h3>
+            <p>A self-built arcade machine for retro gaming.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="BrailleRap Teaser" />
+        <div class="post-entry-content">
+            <span class="date">27.06.2023</span>
+            <h3><a href="post_braillerap.html">BrailleRap: An Open-Source Braille Embosser for Inclusion</a></h3>
+            <p>Building a Braille embosser that can print Braille script.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="OpenFlexure Teaser" />
+        <div class="post-entry-content">
+            <span class="date">10.07.2023</span>
+            <h3><a href="post_openflexure.html">OpenFlexure: Microscopy for Everyone</a></h3>
+            <p>Building the open-source microscope project OpenFlexure.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Boat Teaser" />
+        <div class="post-entry-content">
+            <span class="date">23.07.2023</span>
+            <h3><a href="post_boot.html">Boatbuilding Adventure: My DIY Project</a></h3>
+            <p>My first big project and how I managed to sink a boat even faster than the Vasa.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Drone Teaser" />
+        <div class="post-entry-content">
+            <span class="date">05.08.2023</span>
+            <h3><a href="post_drohne.html">Reaching New Lows: Designing a Drone Chassis</a></h3>
+            <p>Development and construction of my own drone chassis and how it lifted off the table just before rapid self-disassembly.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Filament Recycling Teaser" />
+        <div class="post-entry-content">
+            <span class="date">18.08.2023</span>
+            <h3><a href="post_filament_recycling.html">Filament Recycling: Sustainable 3D Printing</a></h3>
+            <p>How I established a circular filament recycling system at the OpenLab.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Injection Molding Teaser" />
+        <div class="post-entry-content">
+            <span class="date">31.08.2023</span>
+            <h3><a href="post_spritzguss.html">Developing DIY Injection Molding at the OpenLab</a></h3>
+            <p>Experiences with low-cost DIY injection molding using resin molds at the OpenLab.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Resin Printing Teaser" />
+        <div class="post-entry-content">
+            <span class="date">13.09.2023</span>
+            <h3><a href="post_resin_druck.html">Resin Printing: Entering New Dimensions</a></h3>
+            <p>My first steps with resin 3D printing.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Lasercut Lamps Teaser" />
+        <div class="post-entry-content">
+            <span class="date">26.09.2023</span>
+            <h3><a href="post_lasercut_lampen.html">Lasercut Lamps: Where Light Meets Design</a></h3>
+            <p>Design and construction of lamps using a laser cutter.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Workshops Teaser" />
+        <div class="post-entry-content">
+            <span class="date">09.10.2023</span>
+            <h3><a href="post_workshops.html">My First Sponsored Workshop Series in 2024</a></h3>
+            <p>20 workshops. 1 year. How it went...</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Irrigation Systems Teaser" />
+        <div class="post-entry-content">
+            <span class="date">22.10.2023</span>
+            <h3><a href="post_bewaesserungssysteme.html">Irrigation Systems: Smart Solutions for Plants</a></h3>
+            <p>Automated irrigation systems for plants – my very first project.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Teaching Projects Teaser" />
+        <div class="post-entry-content">
+            <span class="date">04.11.2023</span>
+            <h3><a href="post_lehrprojekte.html">Teaching Projects: Making Technology Understandable</a></h3>
+            <p>Projects for imparting knowledge and technology.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Fabx Teaser" />
+        <div class="post-entry-content">
+            <span class="date">17.11.2023</span>
+            <h3><a href="post_fabx.html">Fabx: Bridging the Gap</a></h3>
+            <p>My journey at Fabx 2025.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Finland Teaser" />
+        <div class="post-entry-content">
+            <span class="date">30.11.2023</span>
+            <h3><a href="post_finnland.html">Finland: Visiting Makerspaces in the Far North</a></h3>
+            <p>Experiences and projects in Finland.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Tunisia Teaser" />
+        <div class="post-entry-content">
+            <span class="date">13.12.2023</span>
+            <h3><a href="post_tunesien.html">Tunis: My Guest Lecture at ENIT</a></h3>
+            <p>The story of my first lecture for engineering students as a high school graduate.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Barcelona Teaser" />
+        <div class="post-entry-content">
+            <span class="date">26.12.2023</span>
+            <h3><a href="post_barcelona.html">Barcelona: A Visit to the Origins of the FabLab</a></h3>
+            <p>My time and experiences visiting FabLabs in Barcelona.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Writing Lab Teaser" />
+        <div class="post-entry-content">
+            <span class="date">08.01.2024</span>
+            <h3><a href="post_schreiblabor.html">Writing Lab: Creative Writing</a></h3>
+            <p>How I learned creative writing and even got to read my own story at the Hansa Theater.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Open Lab Internship Teaser" />
+        <div class="post-entry-content">
+            <span class="date">21.01.2024</span>
+            <h3><a href="post_praktikum_openlab.html">Internship at the Open Lab: Learning by Doing</a></h3>
+            <p>My internship at the Open Lab.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Museum of Work Teaser" />
+        <div class="post-entry-content">
+            <span class="date">03.02.2024</span>
+            <h3><a href="post_museum_der_arbeit.html">Museum of Work: Teaching and Making with Everyone</a></h3>
+            <p>Teaching and supporting makers at the Zukunftswerkstatt.</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="post-entry">
+        <img src="images/keyboard_image.jpg" alt="Open Lab Mobile Teaser" />
+        <div class="post-entry-content">
+            <span class="date">16.02.2024</span>
+            <h3><a href="post_openlab_mobile.html">Open Lab Mobile: My Time Working for a Mobile FabLab</a></h3>
+            <p>The OpenLab Mobile and my time working for Süderelbe AG.</p>
+        </div>
+    </div>
+
+</div>
+		</section>
 
 	<!-- Footer -->
 	<footer id="footer" style="display: flex; justify-content: center; padding: 2rem 1rem;">
