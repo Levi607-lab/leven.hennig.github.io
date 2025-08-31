@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Fabx: Bridging the Gap - Leven Hennig</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        .post-image {
+            max-width: 320px;
+            width: 38vw;
+            min-width: 180px;
+            height: auto;
+            margin: 0 2rem 1rem 0;
+            float: left;
+            shape-margin: 1.5rem;
+            shape-outside: rectangle(0,0,100%,100%);
+        }
+        @media (max-width: 900px) {
+            .post-image {
+                max-width: 100%;
+                width: 100%;
+                float: none;
+                display: block;
+                margin: 0 auto 1.5rem auto;
+                shape-outside: none;
+            }
+        }
+        .back-button {
+            position: fixed;
+            top: 30px;
+            left: 20px;
+            padding: 0 18px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Source Sans Pro', Helvetica, sans-serif;
+            text-align: center;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            transition: background 0.2s;
+        }
+        .back-button:hover, .back-button:focus {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <button class="back-button" onclick="history.back()">← Back</button>
+    <div id="wrapper">
+        <header id="header">
+            <a href="index.html" class="logo">Leven Hennig</a>
+        </header>
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li class="active"><a href="Posts.html">Posts</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/leven-hennig-6a9410341/" class="icon brands fa-linkedin"><span class="label">My LinkedIn</span></a></li>
+                <li><a href="https://www.instagram.com/levi_i_i/" class="icon brands fa-instagram"><span class="label">My Instagram</span></a></li>
+                <li><a href="https://github.com/Levi607-lab" class="icon brands fa-github"><span class="label">My GitHub</span></a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <section class="post">
+                <header class="major">
+                    <span class="date">17.11.2023</span>
+                    <h1>Fabx: Bridging the Gap</h1>
+                    <p>My journey at Fabx 2025.</p>
+                </header>
+                <img src="images/keyboard_image.jpg" alt="Fabx Teaser" class="post-image" />
+                <p>
+                    Fabx 2025 was a unique opportunity to connect with makers, educators, and innovators from around the world. The event focused on bridging the gap between technology and society, and I was able to contribute by sharing my own experiences and learning from others.
+                </p>
+                <p>
+                    During the conference, I participated in workshops, panel discussions, and hands-on sessions that explored the latest trends in digital fabrication, open source hardware, and collaborative learning. The atmosphere was inspiring and encouraged everyone to think beyond traditional boundaries.
+                </p>
+                <p>
+                    One of the highlights was working on a collaborative project that brought together people from different backgrounds to solve real-world challenges using maker tools and creative thinking. This experience reinforced my belief in the power of community and open knowledge sharing.
+                </p>
+                <p>
+                    Fabx 2025 not only expanded my technical skills but also deepened my understanding of how making can drive positive change. I left the event with new friends, fresh ideas, and a renewed passion for building bridges between people and technology.
+                </p>
+            </section>
+        </div>
+        <footer id="footer" style="display: flex; justify-content: center; padding: 2rem 1rem;">
+            <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap; text-align: center; width: 100%; justify-content: center;">
+                <section style="display: flex; align-items: center;">
+                    <h3 style="margin: 0 10px 0 0;">Email:</h3>
+                    <a href="mailto:leven.hennig@hsu-hh.de">leven.hennig@hsu-hh.de</a>
+                </section>
+                <section style="display: flex; align-items: center;">
+                    <h3 style="margin: 0 10px 0 0;">Social:</h3>
+                    <ul class="icons" style="display: flex; gap: 10px; margin: 0; padding: 0; list-style: none;">
+                        <li>
+                            <a href="https://www.linkedin.com/in/leven-hennig-6a9410341/" class="icon brands fa-linkedin">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/levi_i_i/" class="icon brands fa-instagram">
+                                <span class="label">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Levi607-lab" class="icon brands fa-github">
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+        <div id="copyright">
+            <ul>
+                <li>&copy; Leven Hennig</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
